@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f5f8ff;
+}
+
+.wrapper{
+    max-width:1200px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.search-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-wrapper{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #573efe;
+}
+
+.form-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#search-input{
+    width: min(80vw, 400px);
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #e1e1e2;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#search-input:focus{
+ outline: none;
+ border: 1px solid #573efe;
+}
+
+#search{
+    width: 80px;
+    height: 50px;
+    padding: 12px;
+    background-color: #573efe;
+    border: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#buttons{
+    max-width: 1200px;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    order: calc(100%);
+}
+
+.button-valor{
+    border: 2px solid #573efe;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.button-valor:hover{
+    background-color: #573efe;
+    color: #fff;
+    cursor: pointer;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 100px));
+    gap: 1.5em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.container{
+    padding: .5em 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.hide{
+    display:none;
+}
+
+.active{
+    background-color: #573efe;
+    color: #fff;
+}
+
+@media  screen and (max-width:400px) {
+    .products{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

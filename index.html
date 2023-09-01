@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filter search with Javascript</title>
+</head>
+<body>
+    
+    <section class="wrapper">
+        <div class="search-container">
+            <h1 class="title-wrapper">Filter Search</h1>
+            <div class="form-search">
+                <input type="search" placeholder="Search product name here..." id="search-input">
+                <button id="search">Search</button>
+            </div>
+        </div>
+        <section id="buttons">
+            <button class="button-valor" onclick="filtrarCard('all')">All</button>
+            <button class="button-valor" onclick="filtrarCard('topwear')">Topwear</button>
+            <button class="button-valor" onclick="filtrarCard('bottomwear')">Bottomwear</button>
+            <button class="button-valor" onclick="filtrarCard('jacket')">Jacket</button>
+            <button class="button-valor" onclick="filtrarCard('watch')">watch</button>
+        </section>
+        <section class="products"></section>
+    </section>
+    
+    <!-- Coding the Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
